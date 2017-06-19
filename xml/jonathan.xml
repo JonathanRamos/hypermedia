@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pessoas>
+    <pessoa>
+        <nome>Jonathan</nome>
+        <sobrenome>Ramos</sobrenome>
+        <descricao>Possui graduação em Informática pela Universidade Federal de Rondônia (2013). Mestre e doutorando em Ciência da Computação pela Universidade de São Paulo em São Carlos. Tem experiênca na área de processamento de imagens; segmentação de imagens, extracção de caracteristicas, busca de imagens baseada em conteúdo.</descricao>
+        <formacao>
+            <graduacao>
+                <tituloobtido>Bacharel em Informática</tituloobtido>
+                <instituicao>Universidade Federal de Rondônia, UNIR</instituicao>
+                <local>Porto Velho, RO - BR</local>
+                <titulo>Desenvolvimento e Análise de Métodos de Segmentação de Imagens para Construção de um Protótipo de Sistema de Detecção Automática de Ovócitos de Peixes</titulo>
+                <anoinicio>2009</anoinicio>
+                <anofim>2013</anofim>
+                <orientador>Carolina Yukari Veludo Watanabe</orientador>
+            </graduacao>
+            <mestrado>
+                <tituloobtido>Mestre em Ciências da Computação e Matemática Computacional</tituloobtido>
+                <instituicao>Universidade de São Paulo, USP</instituicao>
+                <local>São Carlos, SP - BR</local>
+                <titulo>Algoritmos de casamento de imagens com filtragem adaptativa de outliers</titulo>
+                <anoinicio>2014</anoinicio>
+                <anofim>2016</anofim>
+                <orientador>Agma Juci Machado Traina</orientador>
+            </mestrado>
+            <doutorado>
+                <tituloobtido>Doutorado em andamento em Ciências da Computação e Matemática Computacional</tituloobtido>
+                <instituicao>Universidade de São Paulo, USP</instituicao>
+                <local>São Carlos, SP - BR</local>
+                <titulo>Filtragem adaptativa de outliers para fusão de imagens com sobreposição de regiões</titulo>
+                <anoinicio>2017</anoinicio>
+                <orientador>Agma Juci Machado Traina</orientador>
+            </doutorado>
+        </formacao>
+        <publicacoes>
+            <publicacao>
+                <titulo>FOMP: A Novel Preprocessing Technique to Speed-Up the Outlier Removal from Matched Points</titulo>
+                <ano>2016</ano>
+                <evento>Conference on Graphics, Patterns and Images (SIBGRAPI)</evento>
+                <local>São José dos Campos, SP - BR</local>
+                <autores>RAMOS, J. S.; WATANABE, C. Y. V. ; TRAINA, A. J. M. .</autores>
+            </publicacao>
+            <publicacao>
+                <titulo>Automatic counting and measuring fish oocytes from microscopic images</titulo>
+                <ano>2015</ano>
+                <evento>Workshop de Visão Computacional</evento>
+                <local>São Carlos, SP - BR</local>
+                <autores>RAMOS, J. S.; TRAINA, A. J. M.; WATANABE, C. Y. V.; HUNGRIA, D. ; COLACO-FERNANDES, T. ; DORIA, C. R. C.</autores>
+            </publicacao>
+             <publicacao>
+                <titulo>A CAD system based on complex networks theory to characterize mass in mammograms</titulo>
+                <ano>2012</ano>
+                <evento>SPIE</evento>
+                <local>San Diego, CA - EUA</local>
+                <autores>WATANABE, C. Y. V. ; RAMOS, J. S. ; TRAINA, A. J. M. ; TRAINA JUNIOR, C.</autores>
+            </publicacao>
+            <publicacao>
+                <titulo>Extração de Características de Imagens Mamográficas Utilizando Redes Complexas para Detecção de Câncer de Mama</titulo>
+                <ano>2011</ano>
+                <evento>VII Whorkshop de Visão Computacionl</evento>
+                <local>San Diego, CA - EUA</local>
+                <autores>RAMOS, J. S.; WATANABE, C. Y. V. .</autores>
+            </publicacao>
+        </publicacoes>
+    </pessoa>
+</pessoas>

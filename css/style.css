@@ -1,0 +1,199 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+}
+
+.bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+}
+
+#menu {
+    margin: 0 auto;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#menu  li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#head {
+    margin: 0 auto;
+    max-width: 800px; 
+    text-align: justify;
+}
+#photo {
+    float:left;
+    width:190px;
+}
+
+#photo img {
+    border-radius: 50%;
+    width: 60%;
+    float: right;
+}
+
+#pessoa {
+    float:left;
+    width: auto;
+}
+
+
+#descricao {
+    float:left;
+    width: auto;
+    text-align: justify;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+#menu li a:hover {
+    background-color: blue;
+}
+
+#conteudo ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+#conteudo  li {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+#conteudo li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#conteudo li a:hover {
+    background-color: gray;
+}
+
+#rodape { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#aboutme {
+    clear: both;
+    width: 100%;
+}
+#aboutme .formacao_data {
+    display: inline-block; 
+    width: 100%;
+    display: table-cell;
+}
+
+
+#aboutme .data {
+    padding-left: 20%;
+}
+#aboutme .date {
+    clear: left;
+    float: left;
+    padding-top: 2px;
+    width: 20%;
+}
+
+#aboutme .location {
+    clear: right;
+    float: right;
+    text-align: right;
+    width: 20%;
+}
+#aboutme .position {
+    font-style: italic;
+    margin: 0 0 5px 0;
+}
+
+#aboutme h3 {
+    border-bottom: 1px solid #666;
+    clear: both;
+    font: 11pt verdana, arial, helvetica, sans-serif;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+    padding: 0 0 3px 0;
+    width: 100%;
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Registration Form</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Visão de currículos" content="">
+        <meta name="Jonathan Ramos" content="">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="conteudo" class="center" role="main">
+                <form action="/new" method="POST">
+                    <!--                    <label for="first">Nome: </label>
+                                        <input type="text" name="first" /><br />
+                                        <label for="middle">Nome do Meio: </label>
+                                        <input type="text" name="middle" /><br />
+                                        <label for="last">Último Nome: </label>
+                                        <input type="text" name="last" /><br />
+                                        <label for="descricao">Descrição: </label>
+                                        <input type="text" name="descricao" /><br />-->
+                    <label for="mytext">Digite os dados no formato JSON: </label>
+                    <br>
+                    <textarea rows="30" cols="60" name="mytext">
+{
+    "name": {
+        "first": "Agma",
+        "middle": "Juci Machado",
+        "last": "Train"
+    }
+}
+                    </textarea>
+                    <br>
+                    <input type="submit" value="Cadastrar"/>
+                </form>
+
+
+            </div>
+        </div>
+    </body>
+</html>

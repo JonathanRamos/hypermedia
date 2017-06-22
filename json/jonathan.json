@@ -1,5 +1,5 @@
 {
-    "name": {
+    "nome": {
         "first": "Jonathan",
         "middle": "da Silva",
         "last": "Ramos"
@@ -9,10 +9,10 @@
     "descricao": "Possui graduação em Informática pela Universidade Federal de Rondônia (2013). Mestre e doutorando em Ciência da Computação pela Universidade de São Paulo em São Carlos. Tem experiênca na área de processamento de imagens; segmentação de imagens, extração de características, busca de imagens baseada em conteúdo.",
     "formacao": [{
             "descricao": "Graduação",
-            "tituloobtido": "Bacharel em Inform�tica",
-            "instituicao": "Universidade Federal de Rond�nia, UNIR",
+            "tituloobtido": "Bacharel em Informática",
+            "instituicao": "Universidade Federal de Rondônia, UNIR",
             "local": "Porto Velho, RO - BR",
-            "titulo": "Desenvolvimento e An�lise de M�todos de Segmentação de Imagens para Construção de um Protótipo de Sistema de Detecção Automática de Ovócitos de Peixes",
+            "titulo": "Desenvolvimento e Análise de Métodos de Segmentação de Imagens para Construção de um Protótipo de Sistema de Detecção Automática de Ovócitos de Peixes",
             "anoinicio": "2009",
             "anofim": "2013",
             "orientador": "Carolina Yukari Veludo Watanabe"
@@ -20,43 +20,44 @@
         {
             "descricao": "Mestrado",
             "tituloobtido": "Mestre em Ciências da Computação e Matemática Computacional",
-            "instituicao": "Universidade de S�o Paulo, USP",
+            "instituicao": "Universidade de São Paulo, USP",
             "local": "São Carlos, SP - BR",
             "titulo": "Algoritmos de casamento de imagens com filtragem adaptativa de outliers",
             "anoinicio": "2014",
             "anofim": "2016",
             "orientador": "Agma Juci Machado Traina"
-        }, 
+        },
         {
             "descricao": "Doutorado",
-            "tituloobtido": "Doutorado em andamento em Ci�ncias da Computação e Matemática Computacional",
-            "instituicao": "Universidade de S�o Paulo, USP",
-            "local": "S�o Carlos, SP - BR",
-            "titulo": "Filtragem adaptativa de outliers para fus�o de imagens com sobreposi��o de regi�es",
+            "tituloobtido": "Doutorado em andamento em Ciências da Computação e Matemática Computacional",
+            "instituicao": "Universidade de São Paulo, USP",
+            "local": "São Carlos, SP - BR",
+            "titulo": "Filtragem adaptativa de outliers para fusão de imagens com sobreposição de regiões",
             "anoinicio": "2017",
             "orientador": "Agma Juci Machado Traina"
         }],
     "publicacao": [{
+            "tipo": "Conferência",
             "titulo": "FOMP: A Novel Preprocessing Technique to Speed-Up the Outlier Removal from Matched Points",
             "ano": "2016",
             "evento": "Conference on Graphics, Patterns and Images (SIBGRAPI)",
             "local": "São José dos Campos, SP - BR",
             "autores": [{
-                    "name": {
+                    "nome": {
                         "first": "Jonathan",
                         "middle": "da Silva",
                         "last": "Ramos"
                     }
-                }, 
+                },
                 {
-                    "name": {
+                    "nome": {
                         "first": "Carolina",
                         "middle": "Yukari Veludo",
                         "last": "Watanabe"
                     }
-                },  
+                },
                 {
-                    "name": {
+                    "nome": {
                         "first": "Agma",
                         "middle": "Juci Machado",
                         "last": "Traina"
@@ -64,46 +65,47 @@
                 }]
         },
         {
+             "tipo": "Workshop",
             "titulo": "Automatic counting and measuring fish oocytes from microscopic images",
             "ano": "2015",
             "evento": "Workshop de Visão Computacional",
             "local": "São Carlos, SP - BR",
             "autores": "RAMOS, J. S.; TRAINA, A. J. M.; WATANABE, C. Y. V.; HUNGRIA, D. ; COLACO-FERNANDES, T. ; DORIA, C. R. C.",
             "autores": [{
-                    "name": {
+                    "nome": {
                         "first": "Jonathan",
                         "middle": "da Silva",
                         "last": "Ramos"
                     }
-                }, 
+                },
                 {
-                    "name": {
+                    "nome": {
                         "first": "Agma",
                         "middle": "Juci Machado",
                         "last": "Traina"
                     }
                 },
                 {
-                    "name": {
+                    "nome": {
                         "first": "Carolina",
                         "middle": "Yukari Veludo",
                         "last": "Watanabe"
                     }
                 },
                 {
-                    "name": {
+                    "nome": {
                         "first": "Diogo",
                         "last": "Hungri"
                     }
-                }, 
+                },
                 {
-                    "name": {
+                    "nome": {
                         "first": "Thalles",
                         "last": "Colaço-Fernandes"
                     }
                 },
                 {
-                    "name": {
+                    "nome": {
                         "first": "Carolina",
                         "middle": "Rodrigues da Costa",
                         "last": "Dória"
@@ -111,55 +113,64 @@
                 }]
         },
         {
+            "tipo": "Conferência",
             "titulo": "A CAD system based on complex networks theory to characterize mass in mammograms",
             "ano": "2012",
             "evento": "SPIE",
             "local": "San Diego, CA - EUA",
             "autores": [{
-                    "name": {
+                    "nome": {
                         "first": "Carolina",
                         "middle": "Yukari Veludo",
                         "last": "Watanabe"
                     }
-                }, 
+                },
                 {
-                    "name": {
+                    "nome": {
                         "first": "Jonathan",
                         "middle": "da Silva",
                         "last": "Ramos"
                     }
-                }, 
+                },
                 {
-                    "name": {
+                    "nome": {
                         "first": "Agma",
                         "middle": "Juci Machado",
                         "last": "Traina"
                     }
                 },
                 {
-                    "name": {
+                    "nome": {
                         "first": "Caetano",
                         "last": "Traina Junior"
                     }
                 }]
         },
         {
+            "tipo": "Workshop",
             "titulo": "Extração de Características de Imagens Mamográficas Utilizando Redes Complexas para Detecção de Câncer de Mama",
             "ano": "2011",
             "evento": "VII Whorkshop de Visão Computacionl",
             "local": "San Diego, CA - EUA",
             "autores": [{
-                    "name": {
+                    "nome": {
                         "first": "Jonathan",
                         "middle": "da Silva",
                         "last": "Ramos"
                     }
-                }, 
+                },
                 {
-                    "name": {
+                    "nome": {
                         "first": "Carolina",
                         "middle": "Yukari Veludo",
                         "last": "Watanabe"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Agma",
+                        "middle": "Juci Machado",
+                        "last": "Traina"
                     }
                 }]
         }]

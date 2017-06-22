@@ -14,11 +14,11 @@
         "start": "mongod --dbpath=/data --port 1337 --fork --logpath /mongod.log"
     },
     "dependencies": {
-        "assert": "*",
         "body-parser": "^1.17.2",
         "express": "^4.11.2",
-        "mongodb": "*",
+        "jsonschema": "^1.1.1",
+        "mongodb": "^2.2.29",
         "mongoose": "^4.10.6",
-        "path": "*"
+        "path": "^0.12.7"
     }
 }

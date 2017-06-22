@@ -1,14 +1,18 @@
 var mongoose = require('mongoose');
+var Validator = require('jsonschema').Validator;
+var v = new Validator();
+
 var url = 'mongodb://localhost:27017/hypermedia';
 mongoose.Promise = global.Promise;
 mongoose.connect(url);
-var Schema = mongoose.Schema
-        , ObjectId = Schema.ObjectId;
-var schema = new mongoose.Schema({
-    name: {
+
+var schema = {
+    nome: {
         first: {
-            "type": "string",
-            "description": "Primeiro nome da pessoa"
+            type: String,
+            description: "Primeiro nome da pessoa",
+            required: [true, "Informe o primeiro nome"]
+                    //enum: ["Jonathan"]
         },
         middle: {
             "type": "string",
@@ -16,34 +20,60 @@ var schema = new mongoose.Schema({
         },
         last: {
             "type": "string",
-            "description": "Último nome da pessoa"
+            "description": "Último nome da pessoa",
+            required: [true, "Informe o último nome"]
         }
     },
-    "required": ["first", "last"],
-    email: 'string',
+    email: {
+        type: 'string',
+        required: [true, "Informe um email"]
+    },
     photourl: 'string',
     descricao: 'string',
     formacao: [{
-            descricao: 'string',
-            tituloobtido: 'string',
-            instituicao: 'string',
-            local: 'string',
-            titulo: 'string',
-            anoinicio: 'number',
+            descricao: {
+                type: 'string',
+                maxlength: 300,
+                enum: ["Graduação", "Mestrado", "Doutorado"] // Define quais tipos de valores são aceitos (literalmente)
+            },
+            tituloobtido: {
+                type: 'string',
+                maxlength: 100
+            },
+            instituicao: {
+                type: 'string',
+                maxlength: 100
+            },
+            local: {
+                type: 'string',
+                maxlength: 100
+            },
+            titulo: {
+                type: 'string',
+                maxlength: 150
+            },
+            anoinicio: {
+                type: 'number',
+                minimum: 10000
+            },
             anofim: 'number',
             orientador: 'string'
         }],
     publicacao: [{
             tipo: {
                 "type": "string",
-                "description": "Tipo da publicação: livro, revista, periódico, tese, dissertação etc"
+                "description": "Tipo da publicação: livro, revista, periódico, tese, dissertação etc",
+                enum: ["Livro", "Revista", "Periódico", "Workshop", "Conferência"],
+                required: [true, "Informe o tipo de publicação"]
             },
             titulo: 'string',
             ano: 'number',
             evento: 'string',
             local: 'string',
+            volume: 'string',
+            pages: 'string',
             autores: [{
-                    name: {
+                    nome: {
                         first: 'string',
                         middle: 'string',
                         last: 'string'
@@ -51,31 +81,81 @@ var schema = new mongoose.Schema({
                 }]
         }],
     orientacao: [{
-            nome: 'string',
+            aluno: 'string',
             titulo: 'string',
             nivel: 'string',
             anoinicio: 'number',
             anofim: 'number',
             instituicao: 'string'
         }]
-});
+};
 var Pessoa = mongoose.model('pessoa', schema);
 PessoaProvider = function () {};
-//Find all posts
+
+
+
 PessoaProvider.prototype.findAll = function (callback) {
     Pessoa.find({}, function (err, posts) {
         callback(null, posts);
     });
 };
-//Find post by ID
-PessoaProvider.prototype.findPorId = function (id, callback) {
+
+PessoaProvider.prototype.findAllIdNome = function (callback) {
+    Pessoa.find({}, {_id: 1, nome: 1, photourl: 1}, function (err, posts) {
+        callback(null, posts);
+    });
+};
+
+
+PessoaProvider.prototype.findPorNome = function (nome, callback) {
+    
+    Pessoa.find({"nome.first": nome}, {nome: 1, _id: 1, photourl: 1}, function (err, post) {
+        if (!err) {
+            callback(null, post);
+        }
+    });
+};
+
+PessoaProvider.prototype.findPorIdBasicInfo = function (id, callback) {
+    Pessoa.findById(id, {id: 1, nome: 1, descricao: 1, email: 1, photourl: 1}, function (err, post) {
+        if (!err) {
+            callback(null, post);
+        }
+    });
+};
+
+PessoaProvider.prototype.findPorIdAllInfo = function (id, callback) {
     Pessoa.findById(id, function (err, post) {
         if (!err) {
             callback(null, post);
         }
     });
 };
-//Update post by ID
+
+PessoaProvider.prototype.findPorIdPublicacao = function (id, callback) {
+    Pessoa.findById(id, {id: 1, publicacao: 1}, function (err, post) {
+        if (!err) {
+            callback(null, post);
+        }
+    });
+};
+
+PessoaProvider.prototype.findPorIdOrientacao = function (id, callback) {
+    Pessoa.findById(id, {id: 1, orientacao: 1}, function (err, post) {
+        if (!err) {
+            callback(null, post);
+        }
+    });
+};
+
+PessoaProvider.prototype.findPorIdAboutme = function (id, callback) {
+    Pessoa.findById(id, {id: 1, formacao: 1}, function (err, post) {
+        if (!err) {
+            callback(null, post);
+        }
+    });
+};
+
 PessoaProvider.prototype.updateById = function (id, body, callback) {
     Pessoa.findById(id, function (err, post) {
         if (!err) {
@@ -89,13 +169,22 @@ PessoaProvider.prototype.updateById = function (id, body, callback) {
     });
 };
 //Create a new post
-PessoaProvider.prototype.savePessoa = function (body, callback) {
-    var pes = new Pessoa(JSON.parse(body.mytext));
-    pes.save().then(item => {
-        console.log("item saved to database");
-    }).catch(err => {
-        console.log("unable to save to database");
-    });
+PessoaProvider.prototype.savePessoa = function (myjson, body, callback) {
+    var myvalidation = v.validate(myjson, schema);
+    if (myvalidation.errors.length === 0) {
+        var pes = new Pessoa(myjson);
+        pes.save(function (err) {
+            if (err)
+                console.log(err);
+        }).then(item => {
+            console.log("Item salvo na base de dados");
+        }).catch(err => {
+            console.log("Não foi possível salvar o item na base de dados");
+        });
+    } else {
+        console.log(myvalidation.errors);
+    }
 };
+
 exports.PessoaProvider = PessoaProvider;
 

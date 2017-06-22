@@ -1,0 +1,524 @@
+{
+    "nome": {
+        "first": "Agma",
+        "middle": "Juci Machado",
+        "last": "Traina"
+    },
+    "email": "agma@icmc.usp.br",
+    "photourl": "http://conteudo.icmc.usp.br/Portal/Fotos/2085191.jpg",
+    "descricao": "Tem experiência na área de Ciência da Computação, com ênfase em Processamento Gráfico (Graphics) e Bases de Dados Multimídia, atuando principalmente nos seguintes temas: recuperação de imagens baseada em conteúdo, imagens médicas, CBIR, consultas por similaridade, extração de características de imagens, visualização de informação e mineração de imagens e dados complexos.",
+    "formacao": [{
+            "descricao": "Graduação",
+            "tituloobtido": "Bacharelado em Informática",
+            "instituicao": "Universidade de São Paulo",
+            "local": "SP - BR",
+            "titulo": "Desenvolvimento da Linguagem de Simulação de Circuitos Lógicos e de seu Respectivo Simulador.",
+            "anoinicio": "1980",
+            "anofim": "1983",
+            "orientador": "Odelar Leite Linhares"
+        },
+        {
+            "descricao": "Mestrado",
+            "tituloobtido": "Mestre em Ciências da Computação",
+            "instituicao": "Universidade de São Paulo, USP",
+            "local": "São Carlos, SP - BR",
+            "titulo": " Desenvolvimento de Software Básico para Gerenciamento de um Sistema Multiusuário Distribuído",
+            "anoinicio": "1984",
+            "anofim": "1987",
+            "orientador": "Jan Franz W Slaets"
+        },
+        {
+            "descricao": "Doutorado",
+            "tituloobtido": "Doutorado em Física Computacional",
+            "instituicao": "Universidade de São Paulo, USP",
+            "local": "São Carlos, SP - BR",
+            "titulo": "Estudo e Implementação de 'Software'Dedicado para um Sistema de Visualização de Imagens",
+            "anoinicio": "1987",
+            "anofim": "1991",
+            "orientador": "Jan Franz W Slaets"
+        }],
+    "orientacao": [{
+            "aluno": "Jonathan da Silva Ramos",
+            "titulo": "Filtragem adaptativa de outliers para fusão de imagens com sobreposição de regiões",
+            "nivel": "Doutorado",
+            "anoinicio": "2017",
+            "anofim": "",
+            "instituicao": "Instituto de Ciências Matemáticas e de Computação - USP"
+        },
+        {
+            "aluno": "Marcelo Augusto Cordeiro",
+            "titulo": "Visualização de Dados Apoiando a Análise de Extratores de Características Perceptuais de Imagens Médicas",
+            "nivel": "Mestrado",
+            "anoinicio": "2014",
+            "anofim": "2016",
+            "instituicao": "Instituto de Ciências Matemáticas e de Computação - USP"
+        },
+        {
+            "aluno": "Daniel Yoshinobu Takada Chino",
+            "titulo": "Mineração de Padrões Frequentes em Séries Temporais para Apoio à Tomada de Decisão em Agrometeorologia",
+            "nivel": "Mestrado",
+            "anoinicio": "2012",
+            "anofim": "2014",
+            "instituicao": "Instituto de Ciências Matemáticas e de Computação - USP"
+        },
+        {
+            "aluno": "Paulo Duarte Barbieri",
+            "titulo": "Explorando Superpixels para a Segmentação Semiautomática de Imagens Médicas para Recuperação por Conteúdo",
+            "nivel": "Mestrado",
+            "anoinicio": "2017",
+            "instituicao": "Instituto de Ciências Matemáticas e de Computação - USP"
+        },
+        {
+            "aluno": "Gustavo Blanco",
+            "titulo": "Explorando Extratores de Características de Cor e Textura para Análise e Classificação de Imagens Médicas",
+            "nivel": "Mestrado",
+            "anoinicio": "2017",
+            "instituicao": "Instituto de Ciências Matemáticas e de Computação - USP"
+        },
+        {
+            "aluno": "Jonathan da Silva Ramos",
+            "titulo": "Algoritmos de casamento de imagens com filtragem adaptativa de outliers",
+            "nivel": "Mestrado",
+            "anoinicio": "2014",
+            "anofim": "2016",
+            "instituicao": "Instituto de Ciências Matemáticas e de Computação - USP"
+        },
+        {
+            "aluno": "Daniel Yoshinobu Takada Chino",
+            "titulo": "Análise e Integração de Imagens de Monitoramento Usando Motifs",
+            "nivel": "Doutorado",
+            "anoinicio": "2014",
+            "instituicao": "Instituto de Ciências Matemáticas e de Computação - USP"
+        },
+        {
+            "aluno": "Mirela Teixeira Cazzolato",
+            "titulo": "Métodos de Análise e Classificação de Dados Espaço-Temporais em Ambientes de Crowdsourcing",
+            "nivel": "Doutorado",
+            "anoinicio": "2014",
+            "instituicao": "Instituto de Ciências Matemáticas e de Computação - USP"
+        },
+        {
+            "aluno": "Jéssica Andressa de Souza",
+            "titulo": "Estudo e Desenvolvimento de Métodos de Acesso Métrico Utilizando Agrupamento Semântico de Dados",
+            "nivel": "Doutorado",
+            "anoinicio": "2013",
+            "instituicao": "Instituto de Ciências Matemáticas e de Computação - USP"
+        },
+        {
+            "aluno": "Letrícia Pereira Soares Avalhais",
+            "titulo": "Segmentação de cenas de vídeo utilizando análise de séries temporais multimodais",
+            "nivel": "Doutorado",
+            "anoinicio": "2013",
+            "instituicao": "Instituto de Ciências Matemáticas e de Computação - USP"
+        },
+        {
+            "aluno": "Alceu Ferraz Costa",
+            "titulo": "Representações Textuais Suportando Similaridade Visual para Mineração de Imagens de Sites de Redes Sociais",
+            "nivel": "Doutorado",
+            "anoinicio": "2012",
+            "instituicao": "Instituto de Ciências Matemáticas e de Computação - USP"
+        },
+        {
+            "aluno": "Safia Brinis",
+            "titulo": "Techniques for Indexing Large and Complex Datasets with Missing Attribute Values",
+            "nivel": "Doutorado",
+            "anoinicio": "2012",
+            "anofim": "2016",
+            "instituicao": "Instituto de Ciências Matemáticas e de Computação - USP"
+        }],
+    "publicacao": [{
+            "tipo": "Conferência",
+            "titulo": "FOMP: A Novel Preprocessing Technique to Speed-Up the Outlier Removal from Matched Points",
+            "ano": "2016",
+            "evento": "Conference on Graphics, Patterns and Images (SIBGRAPI)",
+            "local": "São José dos Campos, SP - BR",
+            "autores": [{
+                    "nome": {
+                        "first": "Jonathan",
+                        "middle": "da Silva",
+                        "last": "Ramos"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Carolina",
+                        "middle": "Yukari Veludo",
+                        "last": "Watanabe"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Agma",
+                        "middle": "Juci Machado",
+                        "last": "Traina"
+                    }
+                }]
+        },
+        {
+            "tipo": "Workshop",
+            "titulo": "Automatic counting and measuring fish oocytes from microscopic images",
+            "ano": "2015",
+            "evento": "Workshop de Visão Computacional",
+            "local": "São Carlos, SP - BR",
+            "autores": "RAMOS, J. S.; TRAINA, A. J. M.; WATANABE, C. Y. V.; HUNGRIA, D. ; COLACO-FERNANDES, T. ; DORIA, C. R. C.",
+            "autores": [{
+                    "nome": {
+                        "first": "Jonathan",
+                        "middle": "da Silva",
+                        "last": "Ramos"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Agma",
+                        "middle": "Juci Machado",
+                        "last": "Traina"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Carolina",
+                        "middle": "Yukari Veludo",
+                        "last": "Watanabe"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Diogo",
+                        "last": "Hungri"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Thalles",
+                        "last": "Colaço-Fernandes"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Carolina",
+                        "middle": "Rodrigues da Costa",
+                        "last": "Dória"
+                    }
+                }]
+        },
+        {
+            "tipo": "Conferência",
+            "titulo": "A CAD system based on complex networks theory to characterize mass in mammograms",
+            "ano": "2012",
+            "evento": "SPIE",
+            "local": "San Diego, CA - EUA",
+            "autores": [{
+                    "nome": {
+                        "first": "Carolina",
+                        "middle": "Yukari Veludo",
+                        "last": "Watanabe"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Jonathan",
+                        "middle": "da Silva",
+                        "last": "Ramos"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Agma",
+                        "middle": "Juci Machado",
+                        "last": "Traina"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Caetano",
+                        "last": "Traina Junior"
+                    }
+                }]
+        },
+        {
+            "tipo": "Workshop",
+            "titulo": "Extração de Características de Imagens Mamográficas Utilizando Redes Complexas para Detecção de Câncer de Mama",
+            "ano": "2011",
+            "evento": "VII Whorkshop de Visão Computacionl",
+            "local": "San Diego, CA - EUA",
+            "autores": [{
+                    "nome": {
+                        "first": "Jonathan",
+                        "middle": "da Silva",
+                        "last": "Ramos"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Carolina",
+                        "middle": "Yukari Veludo",
+                        "last": "Watanabe"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Agma",
+                        "middle": "Juci Machado",
+                        "last": "Traina"
+                    }
+                }]
+        },
+        {
+            "tipo": "Revista",
+            "titulo": "Meta-generalis: A novel method for structuring information from radiology reports",
+            "ano": "2016",
+            "evento": "Applied Clinical Informatics",
+            "volume": "6",
+            "pages": "803-816",
+            "autores": [{
+                    "nome": {
+                        "first": "Valdair",
+                        "middle": "Francisco",
+                        "last": "Muglia"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "F",
+                        "last": "Barbosa"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Agma",
+                        "middle": "Juci Machado",
+                        "last": "Traina"
+                    }
+                }]
+        },
+        {
+            "tipo": "Revista",
+            "titulo": "Approximate XML structure validation based on document-grammar tree similarity",
+            "ano": "2015",
+            "evento": "Information Sciences",
+            "volume": "295",
+            "pages": "258-302",
+            "autores": [{
+                    "nome": {
+                        "first": "Joe",
+                        "last": "Tekli"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Richard",
+                        "last": "Chbeir"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Agma",
+                        "middle": "Juci Machado",
+                        "last": "Traina"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Caetano",
+                        "last": "Traina Junior"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Renato",
+                        "last": "Fileto"
+                    }
+                }]
+        },
+        {
+            "tipo": "Revista",
+            "titulo": "Similarity sets: A new concept of sets to seamlessly handle similarity in database management systems",
+            "ano": "2015",
+            "evento": "Information Systems (Oxford)",
+            "volume": "9",
+            "pages": "130-148",
+            "autores": [
+                {
+                    "nome": {
+                        "first": "I",
+                        "middle": "R.V",
+                        "last": "Pola"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "R",
+                        "middle": "L.F",
+                        "last": "Cordero"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Agma",
+                        "middle": "Juci Machado",
+                        "last": "Traina"
+                    }
+                }]
+        }
+        ,
+        {
+            "tipo": "Revista",
+            "titulo": "PRoSPer: Perceptual similarity queries in medical CBIR systems through user profiles",
+            "ano": "2014",
+            "evento": "Computers in Biology and Medicine",
+            "volume": "45",
+            "pages": "8-9",
+            "autores": [
+                {
+                    "nome": {
+                        "first": "Pedro",
+                        "middle": "H",
+                        "last": "Bugatti"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "D",
+                        "middle": "Ponciano-Silva",
+                        "last": "Kaster"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Agma",
+                        "middle": "Juci Machado",
+                        "last": "Traina"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Caetano",
+                        "last": "Traina Junior"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Paulo",
+                        "middle": "Mazzoncini de Azevedo",
+                        "last": "Marques"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Agma",
+                        "middle": "Juci Machado",
+                        "last": "Traina"
+                    }
+                }]
+        },
+        {
+            "tipo": "Revista",
+            "titulo": "Findings on ranking evaluation functions for feature weighting in image retrieval",
+            "ano": "2014",
+            "evento": "Journal of The Brazilian Computer Society (Online)",
+            "volume": "20",
+            "pages": "7",
+            "autores": [
+                {
+                    "nome": {
+                        "first": "Sérgio",
+                        "middle": "F",
+                        "last": "da Silva"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Letricia",
+                        "middle": "PS",
+                        "last": "Avalhais"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Marcos",
+                        "middle": "A",
+                        "last": "Batista"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Celia",
+                        "middle": "AZ",
+                        "last": "Batista"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Paulo",
+                        "middle": "Mazzoncini de Azevedo",
+                        "last": "Marques"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Agma",
+                        "middle": "Juci Machado",
+                        "last": "Traina"
+                    }
+                }]
+        },
+        {
+            "tipo": "Revista",
+            "titulo": "Seamless integration of distance functions and feature vectors for similarity-queries processing",
+            "ano": "2014",
+            "evento": "Journal of Information and Data Management - JIDM",
+            "volume": "5",
+            "pages": "308-320",
+            "autores": [
+                {
+                    "nome": {
+                        "first": "M",
+                        "middle": "V.N",
+                        "last": "Bedo"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Agma",
+                        "middle": "Juci Machado",
+                        "last": "Traina"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Caetano",
+                        "last": "Traina Junior"
+                    }
+                }]
+        },
+        {
+            "tipo": "Revista",
+            "titulo": "Analyzing Missing Data in Metric Spaces",
+            "ano": "2014",
+            "evento": "Journal of Information and Data Management - JIDM",
+            "volume": "5",
+            "pages": "224-227",
+            "autores": [
+                {
+                    "nome": {
+                        "first": "Brinis",
+                        "last": "Safia"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Agma",
+                        "middle": "Juci Machado",
+                        "last": "Traina"
+                    }
+                },
+                {
+                    "nome": {
+                        "first": "Caetano",
+                        "last": "Traina Junior"
+                    }
+                }]
+        }
+    ]
+}

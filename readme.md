@@ -4,10 +4,8 @@
 Neste trabalho foram utilizado os seguintes framework:
 
 Clint-side:
-____________________________________________________________________________________________________________
     HTML5, CSS3, jQuery (2.1.3), javascript(1.0), JSON(v4), DOM.
 Server-side (versões usadas no package.json):
-____________________________________________________________________________________________________________
     NodeJS 
     (express (4.11.2), 
     mongodb (2.2.29), 

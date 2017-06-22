@@ -8,7 +8,13 @@ ________________________________________________________________________________
     HTML5, CSS3, jQuery (2.1.3), javascript(1.0), JSON(v4), DOM.
 Server-side (versões usadas no package.json):
 ____________________________________________________________________________________________________________
-    NodeJS (express (4.11.2), mongodb (2.2.29), mongoose(4.10.6), body-parser(1.17.2), jsonschema(1.1.1), path (0.12.7))
+    NodeJS 
+    (express (4.11.2), 
+    mongodb (2.2.29), 
+    mongoose(4.10.6), 
+    body-parser(1.17.2), j
+    sonschema(1.1.1), 
+    path (0.12.7))
 
 Após a instalação do MongoDB e NodeJS, na pasta raiz deste projeto digite:
 npm install --save

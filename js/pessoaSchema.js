@@ -7,87 +7,130 @@ mongoose.Promise = global.Promise;
 mongoose.connect(url);
 
 var schema = {
-    nome: {
-        first: {
-            type: String,
-            description: "Primeiro nome da pessoa",
-            required: [true, "Informe o primeiro nome"]
-                    //enum: ["Jonathan"]
-        },
-        middle: {
-            "type": "string",
-            "description": "Nomes que estiver entre o primeiro e o último nome da pessoa"
-        },
-        last: {
-            "type": "string",
-            "description": "Último nome da pessoa",
-            required: [true, "Informe o último nome"]
-        }
-    },
-    email: {
-        type: 'string',
-        required: [true, "Informe um email"]
-    },
-    photourl: 'string',
-    descricao: 'string',
-    formacao: [{
-            descricao: {
-                type: 'string',
-                maxlength: 300,
-                enum: ["Graduação", "Mestrado", "Doutorado"] // Define quais tipos de valores são aceitos (literalmente)
-            },
-            tituloobtido: {
-                type: 'string',
-                maxlength: 100
-            },
-            instituicao: {
-                type: 'string',
-                maxlength: 100
-            },
-            local: {
-                type: 'string',
-                maxlength: 100
-            },
-            titulo: {
-                type: 'string',
-                maxlength: 150
-            },
-            anoinicio: {
-                type: 'number',
-                minimum: 10000
-            },
-            anofim: 'number',
-            orientador: 'string'
-        }],
-    publicacao: [{
-            tipo: {
-                "type": "string",
-                "description": "Tipo da publicação: livro, revista, periódico, tese, dissertação etc",
-                enum: ["Livro", "Revista", "Periódico", "Workshop", "Conferência"],
-                required: [true, "Informe o tipo de publicação"]
-            },
-            titulo: 'string',
-            ano: 'number',
-            evento: 'string',
-            local: 'string',
-            volume: 'string',
-            pages: 'string',
-            autores: [{
-                    nome: {
-                        first: 'string',
-                        middle: 'string',
-                        last: 'string'
-                    }
-                }]
-        }],
-    orientacao: [{
-            aluno: 'string',
-            titulo: 'string',
-            nivel: 'string',
-            anoinicio: 'number',
-            anofim: 'number',
-            instituicao: 'string'
-        }]
+	nome: {
+		first: {
+			type: String,
+			description: "Primeiro nome da pessoa",
+			required: [true, "Informe o primeiro nome"]
+		},
+		middle: {
+			"type": "string",
+			"description": "Nomes que estiver entre o primeiro e o último nome da pessoa"
+		},
+		last: {
+			"type": "string",
+			"description": "Último nome da pessoa",
+			required: [true, "Informe o último nome"]
+		}
+	},
+	email: {
+		type: 'string',
+		required: [true, "Informe um email"]
+	},
+	photourl: {
+		type: 'string',
+		maxlength: 250
+	},
+	descricao: {
+		type: 'string',
+		maxlength: 500,
+		required: [true, 'Informe uma descrição']
+	},
+	formacao: [{
+		descricao: {
+			type: 'string',
+			maxlength: 300,
+			enum: ["Graduação", "Mestrado", "Doutorado"] // Define quais tipos de valores são aceitos (literalmente)
+		},
+		tituloobtido: {
+			type: 'string',
+			maxlength: 100
+		},
+		instituicao: {
+			type: 'string',
+			maxlength: 100
+		},
+		local: {
+			type: 'string',
+			maxlength: 100
+		},
+		titulo: {
+			type: 'string',
+			maxlength: 150
+		},
+		anoinicio: {
+			type: 'number',
+			minimum: 10000
+		},
+		anofim: 'number',
+		orientador: 'string'
+	}],
+	publicacao: [{
+		tipo: {
+			type: string,
+			description: 'Tipo da publicação: livro, revista, periódico, tese, dissertação etc',
+			enum: ['Livro', 'Revista', 'Periódico', 'Workshop', 'Conferência'],
+			required: [true, 'Informe o tipo de publicação']
+		},
+		titulo: {
+			type: 'string',
+			maxlength: 100
+		},
+		ano: 'number',
+		evento: {
+			type: 'string',
+			maxlength: 100
+		},
+		local: {
+			type: 'string',
+			maxlength: 100
+		},
+		volume: 'number',
+		pages: {
+			type: 'string',
+			maxlength: 10
+		},
+		autores: [{
+			nome: {
+			first: {
+				type: String,
+				description: "Primeiro nome da pessoa",
+				required: [true, "Informe o primeiro nome"]
+				},
+			middle: {
+				"type": "string",
+				"description": "Nomes que estiver entre o primeiro e o último nome da pessoa"
+				},
+			last: {
+				"type": "string",
+				"description": "Último nome da pessoa",
+				required: [true, "Informe o último nome"]
+				}
+			},
+			maxItems: 12 // 12 autores no máximo
+			minItems: 1 // No mínimo um autor
+		}]
+	}],
+	orientacao: [{
+		aluno: {
+			type: 'string',
+			maxlength: 100
+		},
+		titulo: {
+			type: 'string',
+			maxlength: 150
+		},
+		nivel: {
+			type: 'string',
+			enum: ['Iniciação Científica', 'Graduação', 'Mestrado', 'Doutorado', 'Pós-doutorado'],
+		},
+		anoinicio: 'number',
+		anofim: 'number',
+		instituicao: {
+			type: 'string',
+			maxlength: 100
+		}
+	}]
 };
 var Pessoa = mongoose.model('pessoa', schema);
 PessoaProvider = function () {};
